@@ -1,0 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    :root {
+        --background: 210 40% 98%;
+        /* slate-50 */
+        --foreground: 222 47% 11%;
+        /* slate-900 */
+    }
+
+    body {
+        @apply bg-slate-50 text-slate-900 antialiased;
+    }
+}
+
+/* Custom scrollbar for better aesthetics */
+@layer utilities {
+    .scrollbar-hide::-webkit-scrollbar {
+        display: none;
+    }
+
+    .scrollbar-default::-webkit-scrollbar {
+        width: 6px;
+        height: 6px;
+    }
+
+    .scrollbar-default::-webkit-scrollbar-track {
+        background: transparent;
+    }
+
+    .scrollbar-default::-webkit-scrollbar-thumb {
+        @apply bg-slate-200 rounded-full;
+    }
+
+    .scrollbar-default::-webkit-scrollbar-thumb:hover {
+        @apply bg-slate-300;
+    }
+}

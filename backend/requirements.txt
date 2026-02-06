@@ -1,0 +1,30 @@
+# Backend Dependencies
+
+# Web Framework
+fastapi==0.109.0
+uvicorn[standard]==0.27.0
+python-multipart==0.0.6
+
+# PDF Processing
+PyMuPDF>=1.23.8
+
+# Image Processing & ML
+ultralytics==8.1.0
+Pillow==10.2.0
+numpy==1.26.3
+
+# OCR
+paddlepaddle==2.6.2
+paddleocr>=2.7.0
+
+# Chart Understanding
+transformers==4.37.2
+torch==2.2.0
+
+# LLM Integration
+google-generativeai==0.3.2
+
+# Utilities
+pydantic==2.5.3
+python-dotenv==1.0.0
+aiofiles==23.2.1
